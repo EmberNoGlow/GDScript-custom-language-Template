@@ -1,0 +1,6 @@
+# HII GUYS!!!
+it works!
+= 1 =2 =3 
+WRITE ANY *** HERE!
+This will work because at compile time I replace it with \n
+print("Hello from Mylang!!!") (see _compile_to_gdscript() in my_custom_script.gd)
