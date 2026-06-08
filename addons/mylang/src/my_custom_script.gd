@@ -53,3 +53,10 @@ func _get_documentation() -> Array[Dictionary]:
 
 func _update_exports() -> void:
 	pass
+
+func _editor_can_reload_from_file() -> bool:
+	return true
+
+func _reload(_p_keep_state: bool) -> int:
+	_compile_to_gdscript()
+	return OK

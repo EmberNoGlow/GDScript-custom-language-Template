@@ -71,3 +71,6 @@ func _auto_indent_code(_p_code: String, _p_from_line: int, _p_to_line: int) -> S
 
 func _find_function(_p_class_name: String, _p_function_name: String) -> int:
 	return -1
+
+func _reload_all_scripts() -> void:
+	pass
