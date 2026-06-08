@@ -38,6 +38,17 @@ func _complete_code(_p_code: String, _p_path: String, _p_owner: Object) -> Dicti
 func _lookup_code(_p_code: String, _p_symbol: String, _p_path: String, _p_owner: Object) -> Dictionary:
 	return {"result": OK, "type": 0, "class": "", "path": "", "line": 0}
 
+func _get_built_in_templates(p_object: StringName) -> Array[Dictionary]:
+	return [{
+		"inherit": p_object,
+		"name": "Default",
+		"description": "Basic MyLang Template",
+		"content": "# Your code here!!!\n"
+	}]
+
+func _is_text_script() -> bool:
+	return true
+
 func _frame() -> void: pass
 func _thread_enter() -> void: pass
 func _thread_exit() -> void: pass
