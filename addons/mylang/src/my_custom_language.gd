@@ -23,8 +23,9 @@ func _handles_global_class_type(p_type: String) -> bool:
 func _overrides_external_editor() -> bool:
 	return false
 
+# YOUR SYNTAX HIGHLIGHT HERE
 func _get_reserved_words() -> PackedStringArray:
-	return PackedStringArray([])
+	return PackedStringArray(["func", "var", "if", "else", "return", "while", "for", "print"])
 
 func _get_comment_delimiters() -> PackedStringArray:
 	return PackedStringArray(["#"])
